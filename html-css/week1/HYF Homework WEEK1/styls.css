@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+nav {
+    width: 30%;
+    background-color: rgb(87, 86, 218);
+    color: rgb(234, 227, 227);
+    padding: 25px 0;
+    text-align: center;
+}
+
+a {
+    color: rgb(87, 86, 218);
+    text-decoration: none
+}
+
+img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+
+/* i want to select all nav element but not the last one and i discoverd :not() in stack overflow  */
+
+nav :not(:last-child) {
+    padding-bottom: 25px;
+}
+
+nav i {
+    padding: 21px;
+}
+
+nav a+p {
+    padding-top: 30px;
+}
+
+main {
+    width: 70%;
+}
+
+section {
+    border-bottom: solid 1px #EEE;
+    padding-bottom: 20px;
+}
+
+header {
+    padding: 30px 0 0 0;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+button {
+    height: 55px;
+    width: 20%;
+    background-color: rgb(87, 86, 218);
+    color: rgb(234, 227, 227);
+    border: none;
+    padding: 10px;
+}
+
+header button span {
+    display: none;
+}
+
+header button:hover span {
+    display: block;
+}
+
+button:hover {
+    background-color: rgb(234, 227, 227);
+    color: rgb(87, 86, 218);
+}
+
+section div:first-of-type p:first-of-type {
+    font-size: 22px;
+}
+
+header,
+section div,
+section+section h2,
+ol,
+section+section p,
+h3,
+ul {
+    padding: 10px 50px;
+}
+
+section div p {
+    padding: 10px 0;
+}
+
+section div span,
+section ol span {
+    font-weight: bold;
+}
+
+header h2,
+section+section h2,
+h3 {
+    color: rgb(87, 86, 218);
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+section+section li:nth-child(odd) {
+    color: rgb(87, 86, 218);
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 10px 0;
+}
+
+section+section li:nth-child(even) {
+    padding: 0 0 30px 30px
+}
+
+
+/* this is long line, I bet it's not best practices but its side affect for not using class or id, i appreciate them both now :) */
+
+section+section+section ol li:nth-last-child(-n+4) {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 17px;
+}
+
+@media (max-width: 970px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    button {
+        margin-top: 10px;
+        width: 50%;
+    }
+}
