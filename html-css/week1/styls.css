@@ -35,10 +35,16 @@ nav :not(:last-child) {
 
 nav i {
     padding: 21px;
+    color: rgb(234, 227, 227);
 }
 
 nav a+p {
     padding-top: 30px;
+}
+
+nav p {
+    color: rgb(234, 227, 227);
+    padding: 20px 0;
 }
 
 main {
@@ -96,8 +102,9 @@ ul {
     padding: 10px 50px;
 }
 
-section div p {
+section div h1 {
     padding: 10px 0;
+    font-size: 20px;
 }
 
 section div span,
