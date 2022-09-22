@@ -35,6 +35,7 @@ nav :not(:last-child) {
 
 nav i {
     padding: 21px;
+    color: rgb(234, 227, 227);
 }
 
 nav a+p {
