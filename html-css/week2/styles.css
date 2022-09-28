@@ -173,7 +173,7 @@ footer {
     right: -20px;
 }
 
-ul li:not(:last-child) {
+footer ul li:not(:last-child) {
     border-bottom: 1px solid #8D8C8C;
 }
 
