@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>HYF Homework WEEK 3</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="logo">
+            YourCustomTailor
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1 class="main_heading">Sign up to yourcustomtailor.com</h1>
+
+    </article>
+    <section>
+        <h2 class="step_para">
+            Step 2/4 - how can we reach you?
+        </h2>
+        <p class="progress_para">
+            Progress
+        </p>
+        <div class="progress">
+            <div class="progress_fill page_tow">
+            </div>
+
+        </div>
+        <p class="sec_para">
+            We will probably need to stay in touch somehow. Let us know how we can reach you?
+        </p>
+    </section>
+    <form action="./index3.html">
+        <div class="email_phone">
+            <label class="input_label" for="email">email*</label>
+            <input type="email" id="email" name="email" required>
+            <label class="input_label" for="phone">phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="pass">
+            <label class="input_label" for="password">password*</label>
+            <input type="password" class="input_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Minimum 10 characters, uppercase and lowercase letters" id="password" name="password" required placeholder="Minimum 10 characters, uppercase and lowercase letters">
+        </div>
+        <div class="re_pass">
+            <label class="input_label" for="password">Re_enter password*</label>
+            <input type="password" class="input_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Minimum 10 characters, uppercase and lowercase letters" id="re_password" name="re_password" required placeholder="Minimum 10 characters, uppercase and lowercase letters">
+        </div>
+        <div class="newslet_para">
+            <p>
+                I want to sign up for the newsletter
+            </p>
+            <div class="newslet_radio">
+                <div class="weekly_news_radio">
+                    <label class="input_label" for="radio_one">Weekly news</label>
+                    <input type="radio" id="radio_one" name="radio_one" required>
+                </div>
+                <div class="weekly_news_radio">
+                    <label class="input_label" for="radio_tow">Monthly news</label>
+                    <input type="radio" id="radio_tow" name="radio_one" required>
+                </div>
+                <div class="weekly_news_radio">
+                    <label class="input_label" for="radio_three">don't send me news</label>
+                    <input type="radio" id="radio_three" name="radio_one" required>
+                </div>
+            </div>
+        </div>
+        <div class="div_sub_btn">
+            <a class="btn_next_page" href="./index.html">previous page</a>
+            <button class="sub_btn" type="submit">next step</button>
+        </div>
+    </form>
+
+    <div class="div_next_page">
+        <a class="btn_next_page" href="./index.html">previous page</a>
+        <a class="btn_next_page" href="./index3.html">next page</a>
+    </div>
+</body>

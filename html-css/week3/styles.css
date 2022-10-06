@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.125rem;
+    cursor: default
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.625rem;
+}
+
+.logo {
+    padding: 1.875rem 0;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0.313rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_heading,
+.main_para {
+    padding: 0.625rem 0;
+}
+
+article,
+section,
+form {
+    padding: 0 1.875rem;
+}
+
+.progress {
+    width: 100%;
+    height: 1.875rem;
+    border: 0.063rem solid;
+    border-radius: 3.125rem;
+    overflow: hidden;
+}
+
+.page_one,
+.page_tow,
+.page_three,
+.page_four {
+    height: 100%;
+    background-color: #ece9e9;
+    animation: page_one 2s forwards;
+}
+
+@keyframes page_one {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+.page_tow {
+    animation: page_tow 2s forwards;
+}
+
+@keyframes page_tow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.page_three {
+    animation: page_three 2s forwards;
+}
+
+@keyframes page_three {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.page_four {
+    animation: page_four 2s forwards;
+}
+
+@keyframes page_four {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.step_para,
+.sec_para,
+.newslet_para,
+.pass,
+.re_pass,
+.ccv {
+    padding: 0.625rem 0;
+}
+
+.input_pass {
+    margin: 0.313rem 0;
+}
+
+.input_label,
+.credit_num {
+    padding: 0.625rem 0.313rem;
+}
+
+.input_country,
+.name_card,
+.credit_num,
+.expiry_credit,
+.input_name,
+.input_address,
+.email_phone,
+.name_card,
+.credit_num,
+.expiry_credit,
+.ccv {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_textarea {
+    width: 100%;
+}
+
+input,
+select {
+    height: 1.875rem;
+    border-radius: 0.625rem;
+    background-color: #ece9e9;
+    border: 0;
+}
+
+.input_checkbox_ship,
+.input_checkbox_ship,
+.input_items_offer,
+.input_items_style {
+    width: 3.125rem;
+    padding-left: 0.313rem;
+}
+
+.label_checkbox_ship,
+.label_items_offer,
+.input_items_offer {
+    padding: 0 0.625rem;
+}
+
+.input_checkbox,
+.items_input {
+    display: flex;
+    align-items: center;
+}
+
+.div_next_page {
+    text-align: center;
+}
+
+.div_sub_btn,
+.div_next_page {
+    text-align: center;
+    padding: 0.313rem;
+}
+
+.sub_btn,
+.btn_next_page {
+    width: 7rem;
+    height: 1.875rem;
+    background-color: rgb(128, 128, 136);
+    border: 0;
+    color: aliceblue;
+    margin: 0.313rem;
+}
+
+.pass input,
+.re_pass input {
+    width: 100%;
+}
+
+.weekly_news_radio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekly_news_radio .input_label {
+    padding: 0.625rem 0.313rem;
+}
+
+.newslet_radio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items_input {
+    padding: 0.313rem 0;
+}
+
+.style_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style_select_items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.625rem 0;
+}
+
+.input_items_container {
+    padding: 0.625rem;
+    width: 35%;
+    text-align: center;
+}
+
+.label_items_container {
+    padding: 0 0.625rem 0 0;
+}
+
+.btn_next_page {
+    display: inline-block;
+}
+
+.btn_next_page a {
+    color: white;
+}
+
+.div_sub_btn,
+.div_next_page {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    .input_name,
+    .input_address,
+    .email_phone,
+    .credit_num,
+    .expiry_credit {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .input_country,
+    .input_textarea,
+    .pass,
+    .re_pass,
+    .email_phone,
+    .input_name,
+    .input_address,
+    .name_card,
+    .credit_num,
+    .expiry_credit,
+    .ccv {
+        width: 31.25rem;
+    }
+    .input_address {
+        padding: 0.313rem 0;
+    }
+    .header {
+        flex-direction: row;
+        padding: 0 1.875rem;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        width: 14.375rem;
+    }
+    li {
+        width: 100%;
+    }
+    .input_items_container {
+        width: 25%;
+    }
+    .style_container {
+        width: 80%;
+        margin: auto;
+    }
+    .expiry_date {
+        width: 3.125rem;
+    }
+}
