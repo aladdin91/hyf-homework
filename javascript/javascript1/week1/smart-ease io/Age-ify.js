@@ -1,3 +1,5 @@
+'use strict';
+
 const yearOfBirth = 1991;
 const yearFuture = 2031;
 const age = yearFuture - yearOfBirth;

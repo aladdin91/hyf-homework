@@ -1,3 +1,5 @@
+'use strict';
+
 const PeterHouseWidth = 8
 const PeterHouseDepth = 10
 const PeterHouseHeight = 10
