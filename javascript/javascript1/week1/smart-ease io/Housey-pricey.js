@@ -4,7 +4,8 @@ const PeterHouseHeight = 10
 const PeterGardenSizeInM2 = 100
 const PeterHouseCost = 2500000
 const PeterVolumeInMeters = PeterHouseWidth * PeterHouseDepth * PeterHouseHeight
-PeterHousePrice = PeterVolumeInMeters * 2.5 * 1000 + PeterGardenSizeInM2 * 300;
+const PeterHousePrice = PeterVolumeInMeters * 2.5 * 1000 + PeterGardenSizeInM2 * 300;
+
 
 if (PeterHouseCost < PeterHousePrice) {
     console.log(`Peter paid too little`)
