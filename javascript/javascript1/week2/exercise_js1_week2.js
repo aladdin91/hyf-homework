@@ -20,7 +20,6 @@ for (let i = 0; i < names.length; i++) {
     }
 }
 
-
 // Create an if sentence that will give a user a message based on his bank account balance. Use the balance variable and change that.
 
 // If a user has 0 or less balance log out 'Please deposit some money!'
