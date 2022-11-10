@@ -1,12 +1,7 @@
 let userName = ''
 let toDo = []
 
-function date() {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const today = new Date();
-    const todayDate = today.toLocaleDateString("en-US", options)
-    return `today is: ${todayDate}`
-}
+
 
 function showToDo() {
     let toDoList = ''
@@ -41,7 +36,10 @@ function getReply(str) {
         toDo = newList
         return `${removeToDo[0]} removed from your todo list, you todo now is ${newList} `
     } else if (str.includes('is it today')) {
-        return date()
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        const todayDate = today.toLocaleDateString("en-US", options)
+        return `today is: ${todayDate}`
     } else if (str.includes('what is')) {
         const regexNumber = /is\s(\d+)/
         const firstNum = regexNumber.exec(str)
@@ -78,6 +76,9 @@ console.log(getReply('Add study to my todo'))
 console.log(getReply('What is on my todo? '))
 
 console.log(getReply('what is 3 + 30'))
+console.log(getReply('What day is it today?'))
+
+
 
 
 console.log(getReply('Remove fishing from my todo '))
