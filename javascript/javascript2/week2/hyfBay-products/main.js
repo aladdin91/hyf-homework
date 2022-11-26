@@ -32,7 +32,12 @@ userInput.addEventListener('input', () => {
 maxPrice.addEventListener('input', () => {
     const filterdProduct = products.filter(product => product.price <= maxPrice.value);
     sec.innerHTML = ``;
-    renderProducts(filterdProduct);
+    if (maxPrice.value.length === 0) {
+        renderProducts(products);
+    } else {
+        renderProducts(filterdProduct);
+    }
+
 })
 
 sortByPrice.addEventListener('input', () => {
