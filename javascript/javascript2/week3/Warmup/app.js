@@ -126,8 +126,8 @@ console.log(firstFuction())
 
 //Create an object that has a key whose value is a function. Try calling this function.
 const cat = {
-    name: 'meow',
-    age: 12,
+    name: 'Fluffy',
+    age: 2,
     sound: () => {
         console.log('meow');
     },
