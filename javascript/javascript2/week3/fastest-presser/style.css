@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border: none;
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.btn {
+    background-color: #2f80ed;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.show-details {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.playerL-details,
+.playerS-details {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    height: 200px;
+}
+
+.playerLResult,
+.playerSResult {
+    font-size: 30px;
+}
