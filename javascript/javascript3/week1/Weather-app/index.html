@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <title>Weather app</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="sec-left">
+            <div class="sec-left-container">
+                <p class="today">-</p>
+                <p class="today-date">-</p>
+                <p class="time-now"></p>
+                <p class="cite-name">-</p>
+                <input type="text" class="form-input" placeholder="change location" />
+                <button class="btn" id="btn" role="button">change location</button>
+                <p class="temp">-</p>
+                <div class="sec-condtion">
+                    <p class="condtion">-</p>
+                    <img class="icon" src="#" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="sec-right">
+
+            <div class="humidity-detals">
+                <p class="humidity-para">HUMIDITY</p>
+                <p class="humidity-value">-</p>
+            </div>
+            <div class="wind-detals">
+                <p class="wind-para">WIND</p>
+                <p class="wind-value">-</p>
+            </div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
