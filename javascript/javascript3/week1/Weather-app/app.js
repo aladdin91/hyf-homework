@@ -1,4 +1,4 @@
-console.log("working...");
+console.log("working.");
 const apiKey = '2a8c145b05db989897ca23d3b4fa58c9'
 
 const todayDate = document.querySelector('.today-date')
@@ -21,14 +21,12 @@ let day = weekday[today.getDay()];
 
 nameOftoday.innerText = day
 
-
 const dd = String(today.getDate()).padStart(2, '0');
 const mm = String(today.getMonth() + 1).padStart(2, '0');
 const yyyy = today.getFullYear();
 today = `${dd}/${mm}/${yyyy}`
 
 todayDate.innerText = today
-
 
 function showMap(latitude, longitude) {
     const map = L.map('map').setView([latitude, longitude], 13);
@@ -101,8 +99,6 @@ const findMe = () => {
             });
     }
     const error = () => {}
-
     navigator.geolocation.getCurrentPosition(success, error);
-
 }
 findMe()
