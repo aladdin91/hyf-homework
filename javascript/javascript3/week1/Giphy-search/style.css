@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-input-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.title-para {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    width: 60%;
+}
+
+img {
+    width: 100%;
+}
+
+.search-input,
+.number-input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 0 14px;
+}
+
+.btn {
+    background-color: #2f80ed;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    line-height: 1.5;
+    outline: none;
+    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
