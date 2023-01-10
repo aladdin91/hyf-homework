@@ -14,7 +14,7 @@ is NULL;
 SELECT task.id,title,due_date, status.name 
 FROM task
 JOIN status ON task.status_id = status.id
-WHERE status.name="Done";
+WHERE status.name  = "Done";
 
 -- Find all the tasks that are not marked as done
 SELECT task.id,title,due_date, status.name 
