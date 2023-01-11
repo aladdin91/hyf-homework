@@ -1,4 +1,3 @@
-
 -- Find out how many tasks are in the task table
 SELECT count(id)
 AS 'number of tasks'
