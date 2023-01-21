@@ -30,12 +30,12 @@ UPDATE task SET due_date = '2023-01-21' WHERE id = 1;
 
 -- Change a task status
 
-UPDATE task SET status_id = '1' WHERE id = 1;
+UPDATE task SET status_id = 1 WHERE id = 1;
 
 -- Mark a task as complete
 
-UPDATE task SET status_id = '3' WHERE id = 31;
+UPDATE task SET status_id = 3 WHERE id = 31;
 
 -- Delete a task
 
-DELETE FROM task WHERE id = '15';
+DELETE FROM task WHERE id = 15;
