@@ -47,5 +47,4 @@ SELECT
     COUNT(task.id) as 'Tasks Created'
 FROM task
 GROUP BY
-    MONTH(task.created),
     DATE_FORMAT(task.created, '%M');
