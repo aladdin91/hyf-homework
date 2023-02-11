@@ -184,12 +184,12 @@ WHERE Review.stars >= 6;
 --Get reservations for a specific meal sorted by created_date
 
 SELECT
-    title,
+    meal.title,
     reservation.created_date
 FROM meal
     JOIN reservation ON meal.id = reservation.id
 WHERE
-    title LIKE 'Chicken and Rice'
+    title = 'Chicken and Rice'
 ORDER BY
     reservation.created_date;
 

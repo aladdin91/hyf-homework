@@ -4,7 +4,7 @@ use meal_sharing_DB;
 
 CREATE TABLE
     Meal(
-        `id` INT(10) UNIQUE NOT NULL PRIMARY KEY,
+        `id` INT(10) PRIMARY KEY AUTO_INCREMENT,
         `title` VARCHAR(50) NOT NULL,
         `description` TEXT,
         `location` VARCHAR(50) NOT NULL,
