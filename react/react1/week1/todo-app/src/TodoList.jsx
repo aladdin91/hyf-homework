@@ -5,10 +5,9 @@ import todoListData from './todos.json';
 const TodoList = () => {
   return (
     <div>
-      <h1>Todo List</h1>
       <ul>
         {todoListData.map((item, index) => (
-          <TodoItem key={index} description={item.description} deadline={item.deadline} />
+          <TodoItem key={index} item={item} />
         ))}
       </ul>
     </div>
