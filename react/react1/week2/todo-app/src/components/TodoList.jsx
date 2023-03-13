@@ -3,12 +3,12 @@ import TodoItem from "./TodoItems";
 import AddRandomTodo from "./AddRandomTodo";
 
 function ToDosList({ todoItem }) {
-  const [todos, setTodo] = useState(todoItem);
+  const [todos, setTodos] = useState(todoItem);
 
-  const mapTodo = () => {
+  const renderTodos = () => {
     if (todos.length !== 0) {
       return todos.map((item) => (
-        <TodoItem key={item.id} item={item} todos={todos} setTodo={setTodo} />
+        <TodoItem key={item.id} item={item} todos={todos} setTodo={setTodos} />
       ));
     } else {
       return <h3>No items</h3>;
@@ -16,8 +16,8 @@ function ToDosList({ todoItem }) {
   };
   return (
     <div>
-      <AddRandomTodo todo={todos} setTodo={setTodo} />
-      <ul>{mapTodo()}</ul>
+      <AddRandomTodo todo={todos} setTodo={setTodos} />
+      <ul>{renderTodos()}</ul>
     </div>
   );
 }
