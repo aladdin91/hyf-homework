@@ -25,7 +25,7 @@ function ToDosList() {
   return (
     <>
       <AddTodo todos={todos} setTodos={setTodos} />
-      <ul>{renderTodo()}</ul>
+      <ul className="toDo-container">{renderTodo()}</ul>
     </>
   );
 }

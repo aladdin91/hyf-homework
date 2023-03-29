@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-li {
+.toDo-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,7 +10,7 @@ li {
   width: 80%;
   margin: 6px;
 }
-ul {
+.toDo-container {
   display: flex;
   flex-direction: column;
   align-items: center;

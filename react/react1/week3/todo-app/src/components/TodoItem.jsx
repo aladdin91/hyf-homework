@@ -37,7 +37,7 @@ function TodoItem({ item, todos, setTodos }) {
     setEditedDeadline(item.deadline);
   };
   return (
-    <li>
+    <li className="toDo-list">
       {isEditing ? (
         <div className="listItem">
           <input
