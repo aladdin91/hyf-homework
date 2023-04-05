@@ -1,5 +1,7 @@
 Lettuce
 Cucumbers
-Onions
+Carrots
 Garlic
 Zucchini
+Tomatoes
+Broccoli
